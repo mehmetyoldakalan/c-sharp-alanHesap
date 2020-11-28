@@ -11,13 +11,13 @@ namespace NesneTabanlıProgramlamaOdev2
         public int b;
         public int h;
 
-        public int alanhesapla()
+        public int alanhesapla(b,h)
         {
             int sonuc = b * h;
             return sonuc;
         }
 
-        public int cevrehesapla()
+        public int cevrehesapla(b,h)
         {
             int sonuc = (2 * b) + (2 * h);
             return sonuc;
@@ -31,6 +31,8 @@ namespace NesneTabanlıProgramlamaOdev2
             Console.WriteLine("b ve h için değer giriniz");
             dikdortgen.b = Convert.ToInt32(Console.ReadLine());
             dikdortgen.h = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(dikdortgen.cevrehesapla());
+            Console.WriteLine(dikdortgen.alanhesapla());
             
         }
     }
